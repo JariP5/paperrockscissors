@@ -1,0 +1,24 @@
+# ====== IntelliJ IDEA / JetBrains-specific ======
+.idea/
+*.iml
+/shelf/
+/workspace.xml
+/compiler.xml
+/jarRepositories.xml
+/mavenHomeManager.xml
+
+# ====== Build directories ======
+/target/
+
+# ====== Logs ======
+*.log
+
+# ====== OS-specific files ======
+.DS_Store
+Thumbs.db
+
+# ====== Misc ======
+*.class
+*.jar
+*.war
+*.ear
