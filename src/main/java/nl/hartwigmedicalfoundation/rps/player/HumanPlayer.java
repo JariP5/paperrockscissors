@@ -8,8 +8,8 @@ public class HumanPlayer implements Player {
     private final String name;
     private final Scanner scanner;
 
-    public HumanPlayer(Scanner scanner) {
-        this.name = "User";
+    public HumanPlayer(String name, Scanner scanner) {
+        this.name = name;
         this.scanner = scanner;
     }
 

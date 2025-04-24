@@ -8,8 +8,8 @@ public class ComputerPlayer implements Player {
     private final String name;
     private final Supplier<Move> moveSupplier;
 
-    public ComputerPlayer(Supplier<Move> moveSupplier) {
-        this.name = "Bot";
+    public ComputerPlayer(String name, Supplier<Move> moveSupplier) {
+        this.name = name;
         this.moveSupplier = moveSupplier;
     }
 
