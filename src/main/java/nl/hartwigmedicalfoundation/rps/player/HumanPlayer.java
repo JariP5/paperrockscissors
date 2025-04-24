@@ -19,6 +19,7 @@ public class HumanPlayer implements Player {
             System.out.printf("%s, enter your move (rock, paper, scissors): ", name);
             String input = scanner.nextLine().trim().toLowerCase();
 
+            // Stop the game early if the player chooses 'exit'
             if (input.equals("exit")) {
                 throw new RuntimeException("User exited the game");
             }
