@@ -13,8 +13,8 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        Player human = new HumanPlayer("Bot", scanner);
-        Player computer = new ComputerPlayer("User", new RandomMoveSupplier());
+        Player human = new HumanPlayer("User", scanner);
+        Player computer = new ComputerPlayer("Bot", new RandomMoveSupplier());
         Game game = new Game(human, computer);
         GameStats gameStats = new GameStats();
 
