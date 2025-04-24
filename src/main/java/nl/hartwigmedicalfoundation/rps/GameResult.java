@@ -1,5 +1,5 @@
 package nl.hartwigmedicalfoundation.rps;
 
 public enum GameResult {
-    WIN, LOSS, TIE
+    WIN_PLAYER_1, WIN_PLAYER_2, DRAW
 }
