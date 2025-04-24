@@ -1,4 +1,6 @@
-package nl.hartwigmedicalfoundation.rps;
+package nl.hartwigmedicalfoundation.rps.player.supplier;
+
+import nl.hartwigmedicalfoundation.rps.model.Move;
 
 import java.util.Random;
 import java.util.function.Supplier;

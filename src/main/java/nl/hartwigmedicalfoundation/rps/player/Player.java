@@ -1,6 +1,6 @@
 package nl.hartwigmedicalfoundation.rps.player;
 
-import nl.hartwigmedicalfoundation.rps.Move;
+import nl.hartwigmedicalfoundation.rps.model.Move;
 
 public interface Player {
     Move chooseMove();

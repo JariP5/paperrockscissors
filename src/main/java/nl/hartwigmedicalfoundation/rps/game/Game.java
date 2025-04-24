@@ -1,5 +1,8 @@
-package nl.hartwigmedicalfoundation.rps;
+package nl.hartwigmedicalfoundation.rps.game;
 
+import nl.hartwigmedicalfoundation.rps.model.GameResult;
+import nl.hartwigmedicalfoundation.rps.model.Move;
+import nl.hartwigmedicalfoundation.rps.model.RoundResult;
 import nl.hartwigmedicalfoundation.rps.player.Player;
 
 public class Game {

@@ -1,4 +1,4 @@
-package nl.hartwigmedicalfoundation.rps;
+package nl.hartwigmedicalfoundation.rps.model;
 
 public enum Move {
     ROCK, PAPER, SCISSORS;

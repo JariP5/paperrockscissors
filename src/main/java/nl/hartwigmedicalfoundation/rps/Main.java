@@ -1,11 +1,14 @@
 package nl.hartwigmedicalfoundation.rps;
 
+import nl.hartwigmedicalfoundation.rps.game.Game;
+import nl.hartwigmedicalfoundation.rps.game.GameStats;
+import nl.hartwigmedicalfoundation.rps.model.RoundResult;
 import nl.hartwigmedicalfoundation.rps.player.ComputerPlayer;
 import nl.hartwigmedicalfoundation.rps.player.HumanPlayer;
 import nl.hartwigmedicalfoundation.rps.player.Player;
+import nl.hartwigmedicalfoundation.rps.player.supplier.RandomMoveSupplier;
 
 import java.util.Scanner;
-import java.util.function.Supplier;
 
 public class Main {
     public static void main(String[] args) {
@@ -31,6 +34,5 @@ public class Main {
 
         gameStats.printSummary();
         System.out.println("Thanks for playing!");
-
     }
 }

@@ -1,5 +1,6 @@
 package nl.hartwigmedicalfoundation.rps;
 
+import nl.hartwigmedicalfoundation.rps.model.Move;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 

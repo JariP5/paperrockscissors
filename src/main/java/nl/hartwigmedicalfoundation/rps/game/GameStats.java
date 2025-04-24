@@ -1,4 +1,6 @@
-package nl.hartwigmedicalfoundation.rps;
+package nl.hartwigmedicalfoundation.rps.game;
+
+import nl.hartwigmedicalfoundation.rps.model.GameResult;
 
 public class GameStats {
     private int winsPlayer1;
