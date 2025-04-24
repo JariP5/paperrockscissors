@@ -36,7 +36,7 @@ public class RoundResult {
             case WIN_PLAYER_2 -> String.format("%s played %s, %s played %s. %s wins!",
                     player1Name, player1Move,
                     player2Name, player2Move, player2Name);
-            case DRAW -> String.format("%s played %s, %s played %s. It's a tie!",
+            case DRAW -> String.format("%s played %s, %s played %s. It's a draw!",
                     player1Name, player1Move,
                     player2Name, player2Move);
         };
