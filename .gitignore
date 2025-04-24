@@ -2,7 +2,7 @@
 .idea/
 *.iml
 /shelf/
-/workspace.xml
+/.idea/workspace.xml
 /compiler.xml
 /jarRepositories.xml
 /mavenHomeManager.xml
