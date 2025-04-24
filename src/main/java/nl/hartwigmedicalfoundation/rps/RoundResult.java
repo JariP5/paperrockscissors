@@ -19,7 +19,7 @@ public class RoundResult {
         return this.player2Move;
     }
 
-    public GameResult getGameResult() {
+    public GameResult getResult() {
         return this.result;
     }
 }
