@@ -1,35 +1,36 @@
 package nl.hartwigmedicalfoundation.rps;
 
+import nl.hartwigmedicalfoundation.rps.player.ComputerPlayer;
+import nl.hartwigmedicalfoundation.rps.player.HumanPlayer;
+import nl.hartwigmedicalfoundation.rps.player.Player;
+
 import java.util.Scanner;
+import java.util.function.Supplier;
 
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        Game game = new Game();
+        Player human = new HumanPlayer(scanner);
+        Player computer = new ComputerPlayer(new RandomMoveSupplier());
+        Game game = new Game(human, computer);
         GameStats gameStats = new GameStats();
 
         System.out.println("Welcome to Rock Paper Scissors!");
-        System.out.println("Enter 'rock', 'paper', 'scissors', or 'exit' to quit.");
+        System.out.println("Enter 'exit' at any time to quit the game.");
 
         while (true) {
-            System.out.print("\nYour move: ");
-            String input = scanner.nextLine().trim().toUpperCase();
-
-            if (input.equals("EXIT")) break;
-
             try {
-                Move userMove = Move.valueOf(input);
-                RoundResult result = game.playRound(userMove);
+                System.out.println("\n--- New Round ---");
+                RoundResult result = game.playRound();
                 gameStats.record(result.getResult());
-
-                System.out.printf("Computer played: %s%n", result.getPlayer2Move());
-                System.out.printf("You %s!%n", result.getResult());
-            } catch (IllegalArgumentException e) {
-                System.out.println("Invalid input. Please enter rock, paper, scissors, or exit.");
+                System.out.println(result);
+            } catch (Exception e) {
+                break;
             }
         }
 
         gameStats.printSummary();
         System.out.println("Thanks for playing!");
+
     }
 }

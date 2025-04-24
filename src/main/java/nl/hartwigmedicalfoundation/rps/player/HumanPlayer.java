@@ -17,8 +17,14 @@ public class HumanPlayer implements Player {
     public Move chooseMove() {
         while (true) {
             System.out.printf("%s, enter your move (rock, paper, scissors): ", name);
+            String input = scanner.nextLine().trim().toLowerCase();
+
+            if (input.equals("exit")) {
+                throw new RuntimeException("User exited the game");
+            }
+
             try {
-                return Move.valueOf(scanner.nextLine().trim().toUpperCase());
+                return Move.valueOf(input.toUpperCase());
             } catch (IllegalArgumentException e) {
                 System.out.println("Invalid input. Try again.");
             }
